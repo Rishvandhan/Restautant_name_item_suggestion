@@ -5,7 +5,7 @@ st.title("Restaurant Name Generator")
 
 # Sidebar cuisine selection
 # Add an image from a local file
-st.sidebar.image("Resources/2.jpg", caption="yummy fried chicken", use_container_width=True)
+st.sidebar.image("Resources/logo.jpg", caption="Large Language Models", use_container_width=True)
 cuisine = st.sidebar.selectbox("Pick a Cuisine", ("Select a Cuisine", "Indian", "Italian", "Mexican", "Arabic", "American"))
 
 
