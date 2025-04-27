@@ -8,10 +8,10 @@ from dotenv import load_dotenv
 import os
 
 
-
+load_dotenv()
 
 os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 
 llm = ChatOpenAI(
