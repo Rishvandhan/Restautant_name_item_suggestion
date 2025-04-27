@@ -16,7 +16,9 @@ os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 llm = ChatOpenAI(
     model="microsoft/mai-ds-r1:free",
-    temperature=0.7
+    temperature=0.7,
+    openai_api_base="https://openrouter.ai/api/v1",
+    openai_api_key="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" # Replace with your key
 )
 
 def generate_name_items(cuisine):
