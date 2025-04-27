@@ -15,9 +15,12 @@ os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 
 llm = ChatOpenAI(
-    model="microsoft/mai-ds-r1:free",
+    
+    model= "tngtech/deepseek-r1t-chimera:free",
     temperature=0.7,
 )
+def dummy():
+    return os.environ["OPENAI_API_KEY"]
 
 def generate_name_items(cuisine):
     prompt_template_name = PromptTemplate(
