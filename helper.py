@@ -11,7 +11,7 @@ import os
 
 
 os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
-os.environ["OPENAI_API_KEY"] = os.getenv("API_KEY")
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 
 llm = ChatOpenAI(
